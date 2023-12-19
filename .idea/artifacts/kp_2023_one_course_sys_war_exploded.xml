@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="kp_2023_one_course_sys:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/kp_2023_one_course_sys_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="kp_2023_one_course_sys/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="kp_2023_one_course_sys" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
