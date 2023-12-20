@@ -1,4 +1,11 @@
-﻿<!DOCTYPE html>
+<%--
+  Created by IntelliJ IDEA.
+  User: 75084
+  Date: 2023/12/20
+  Time: 16:43
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
@@ -13,7 +20,7 @@
 
     <div class="publicHeaderR">
         <p><span>下午好！</span><span style="color: #fff21b"> Admin</span> , 欢迎你！</p>
-        <a href="login.html">退出</a>
+        <a href="login.jsp">退出</a>
     </div>
 </header>
 <!--时间-->
@@ -27,11 +34,11 @@
         <h2 class="leftH2"><span class="span1"></span>功能列表 <span></span></h2>
         <nav>
             <ul class="list">
-                <li ><a href="subjectList.html">科目管理</a></li>
-                <li><a href="studyList.html">课件管理</a></li>
-                <li><a href="userList.html">用户管理</a></li>
-                <li><a href="password.html">密码修改</a></li>
-                <li><a href="login.html">退出系统</a></li>
+                <li ><a href="subjectList.jsp">科目管理</a></li>
+                <li><a href="studyList.jsp">课件管理</a></li>
+                <li><a href="userList.jsp">用户管理</a></li>
+                <li><a href="password.jsp">密码修改</a></li>
+                <li><a href="login.jsp">退出系统</a></li>
             </ul>
         </nav>
     </div>
@@ -49,7 +56,7 @@
             <p><strong>用户地址：</strong><span>北极</span></p>
             <p><strong>用户类别：</strong><span>学员</span></p>
 
-            <a href="userList.html">返回</a>
+            <a href="userList.jsp">返回</a>
         </div>
     </div>
 </section>

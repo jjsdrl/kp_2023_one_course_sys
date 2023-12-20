@@ -1,4 +1,11 @@
-﻿<!DOCTYPE html>
+<%--
+  Created by IntelliJ IDEA.
+  User: 75084
+  Date: 2023/12/20
+  Time: 16:40
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
@@ -13,7 +20,7 @@
 
     <div class="publicHeaderR">
         <p><span>下午好！</span><span style="color: #fff21b"> Admin</span> , 欢迎你！</p>
-        <a href="login.html">退出</a>
+        <a href="login.jsp">退出</a>
     </div>
 </header>
 <!--时间-->
@@ -27,60 +34,54 @@
         <h2 class="leftH2"><span class="span1"></span>功能列表 <span></span></h2>
         <nav>
             <ul class="list">
-                <li ><a href="subjectList.html">科目管理</a></li>
-                <li><a href="studyList.html">课件管理</a></li>
-                <li><a href="userList.html">用户管理</a></li>
-                <li><a href="password.html">密码修改</a></li>
-                <li><a href="login.html">退出系统</a></li>
+                <li ><a href="subjectList.jsp">科目管理</a></li>
+                <li><a href="studyList.jsp">课件管理</a></li>
+                <li><a href="userList.jsp">用户管理</a></li>
+                <li><a href="password.jsp">密码修改</a></li>
+                <li><a href="login.jsp">退出系统</a></li>
             </ul>
         </nav>
     </div>
     <div class="right">
         <div class="location">
             <strong>你现在所在的位置是:</strong>
-            <span>用户管理页面 >> 用户修改页面</span>
+            <span>课件管理页面 >> 课件资源添加页面</span>
         </div>
         <div class="providerAdd">
             <form action="#">
                 <!--div的class 为error是验证错误，ok是验证成功-->
                 <div>
-                    <label for="userName">真实姓名：</label>
-                    <input type="text" name="userName" id="userName" placeholder="韩露"/>
-                    <span >*</span>
+                    <label for="title">课件资源名：</label>
+                    <input type="text" name="title" id="title"/>
+                    <span >*请输入课件资源名</span>
                 </div>
-
                 <div>
-                    <label >用户性别：</label>
+                    <label>所属科目：</label>
 
-                    <select name="">
-                        <option value="man">男</option>
-                        <option value="woman" selected>女</option>
+                    <select name="subject">
+                        <option value="1">html</option>
+                        <option value="2">JavaScript</option>
+                        <option value="3">Java</option>
                     </select>
+                    <span></span>
                 </div>
-                <div>
-                    <label for="data">出生日期：</label>
-                    <input type="text" name="data" id="data" placeholder="2016年2月1日"/>
-                    <span >*</span>
-                </div>
-                <div>
-                    <label for="userphone">用户电话：</label>
-                    <input type="text" name="userphone" id="userphone" placeholder="13533667897"/>
-                    <span >*</span>
-                </div>
-                <div>
-                    <label for="userAddress">用户地址：</label>
-                    <input type="text" name="userAddress" id="userAddress" placeholder="北京"/>
-                </div>
-                <div>
-                    <label >用户类别：</label>
-                     <input type="radio" name="userlei" value="0"/>学员
-                    <input type="radio" name="userlei" value="1"/>老师
-                    <input type="radio" name="userlei" value="2"/>管理员
 
+                <div>
+                    <label for="summary">课件简介：</label>
+                    <textArea cols="80" rows="4" name="summary" id="summary"></textArea>
+                </div>
+                <div>
+                    <label for="content">课件详情：</label>
+                    <textArea cols="80" rows="12" name="content" id="content"></textArea>
+                </div>
+                <div>
+                    <label for="fileSrc">课件附件：</label>
+                    <input type="file" name="fileSrc" id="fileSrc"/>
+                    <span >*请选择文件</span>
                 </div>
                 <div class="providerAddBtn">
                     <!--<a href="#">保存</a>-->
-                    <!--<a href="userList.html">返回</a>-->
+                    <!--<a href="userList.jsp">返回</a>-->
                     <input type="button" value="保存" onclick="history.back(-1)"/>
                     <input type="button" value="返回" onclick="history.back(-1)"/>
                 </div>
