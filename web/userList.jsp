@@ -19,7 +19,7 @@
     <h1>小白兔科技课件管理系统</h1>
     <div class="publicHeaderR">
         <p><span>下午好！</span><span style="color: #fff21b"> Admin</span> , 欢迎你！</p>
-        <a href="login.jsp">退出</a>
+        <a href="${pageContext.request.contextPath}/loginOut">退出</a>
     </div>
 </header>
 <!--时间-->
@@ -37,7 +37,7 @@
                 <li><a href="studyList.jsp">课件管理</a></li>
                 <li><a href="userList.jsp">用户管理</a></li>
                 <li><a href="password.jsp">密码修改</a></li>
-                <li><a href="login.jsp">退出系统</a></li>
+                <li><a href="${pageContext.request.contextPath}/loginOut">退出系统</a></li>
             </ul>
         </nav>
     </div>
